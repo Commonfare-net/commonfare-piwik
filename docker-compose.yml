@@ -1,6 +1,6 @@
 version: '2'
 networks:
-  lb_web:
+  commonfare-nginx-proxy:
     external: true
   back:
     driver: bridge
@@ -33,7 +33,7 @@ services:
       - VIRTUAL_HOST
     networks:
     - back
-    - lb_web
+    - commonfare-nginx-proxy
   cron:
     image: piwik:fpm
     links:
