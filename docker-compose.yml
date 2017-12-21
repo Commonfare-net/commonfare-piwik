@@ -30,7 +30,7 @@ services:
     volumes_from:
       - app
     environment:
-      - VIRTUAL_HOST
+      - VIRTUAL_HOST=piwik.commonfare.net # nginx-proxy configuration
     networks:
     - back
     - commonfare-nginx-proxy
