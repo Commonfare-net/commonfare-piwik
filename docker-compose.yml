@@ -31,6 +31,9 @@ services:
       - app
     environment:
       - VIRTUAL_HOST=piwik.commonfare.net # nginx-proxy configuration
+      - VIRTUAL_PORT=80
+      # - LETSENCRYPT_HOST=piwik.commonfare.net
+      # - LETSENCRYPT_EMAIL=pbmolini@fbk.eu
     networks:
     - back
     - commonfare-nginx-proxy
