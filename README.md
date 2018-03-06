@@ -45,14 +45,18 @@ At the `Database Setup` step, please enter the following:
   -  Login: `root`
   -  Password: MYSQL_ROOT_PASSWORD
   -  Database Name: piwik (or you can choose)
- 
+
 And leave the rest as default.
 
 Then you can continue the installation with the super user.
 
 ## Backup
 
-In order to backup, just run the `./pre-backup` script. And copy all the data to a safe place.
+In order to backup, just run the `./scripts/pre-backup` script and copy all the data to a safe place.
+
+```bash
+$ ./scripts/pre-backup
+```
 
 ## Contribute
 
